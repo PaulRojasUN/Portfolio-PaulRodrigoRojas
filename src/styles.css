@@ -11,3 +11,12 @@ body,
 canvas{
     touch-action: none;
 }
+.info-container{
+    position: absolute;
+    z-index: 1;
+    color:aliceblue;
+    width: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: antiquewhite;
+}

@@ -17,9 +17,13 @@ const Experience = () => {
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={2} />
         <mesh ref={boxRef}>
-            <boxGeometry args={[1, 1, 1]} />
+            <boxGeometry args={[2, 2, 2]} />
             <meshStandardMaterial color="yellow" />
         </mesh>
+        {/* <mesh ref={boxRef} position={[4, 0, 0]}>
+            <boxGeometry args={[2, 2, 2]} />
+            <meshStandardMaterial color="yellow" />
+        </mesh> */}
 </>
 }
 
