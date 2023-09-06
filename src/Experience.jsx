@@ -6,12 +6,6 @@ import "./styles.css";
 
 const Experience = () => {
 
-    const torusRef = useRef();
-
-    useFrame((state, delta) => {
-        torusRef.current.rotation.x += 1*delta;
-    });
-
     const boxRef = useRef();
 
     useFrame((state, delta) => {
@@ -35,10 +29,6 @@ const Experience = () => {
         <OrbitControls makeDefault/>
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={2} />
-        <mesh ref={torusRef} position={[0, 2, -10]}>
-            <torusGeometry args={[1, 2, 16]} />
-            <meshPhongMaterial color="red" />
-        </mesh>
         <mesh ref={boxRef}>
             <boxGeometry args={[2, 2, 2]} />
             <meshStandardMaterial color="yellow" />
