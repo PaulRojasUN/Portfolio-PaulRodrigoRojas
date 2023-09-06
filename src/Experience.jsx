@@ -8,22 +8,15 @@ const Experience = () => {
 
     const boxRef = useRef();
 
-    useFrame((state, delta) => {
-        boxRef.current.rotation.x += 1*delta;
-    });
-
     const sphereRef = useRef();
-
-    useFrame((state, delta) => {
-        sphereRef.current.rotation.x += 1*delta;
-    });
 
     const coneRef = useRef();
 
     useFrame((state, delta) => {
-        coneRef.current.rotation.x += 1*delta;
+        boxRef.current.rotation.x += 1*delta;
+        sphereRef.current.position.y = Math.cos(state.clock.getElapsedTime());
+        coneRef.current.position.y = Math.sin(state.clock.getElapsedTime());
     });
-
 
     return <>
         <OrbitControls makeDefault/>
