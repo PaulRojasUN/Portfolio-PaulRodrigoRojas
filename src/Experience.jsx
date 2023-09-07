@@ -12,8 +12,11 @@ const Experience = () => {
 
     const coneRef = useRef();
 
+    const torusRef = useRef();
+
     useFrame((state, delta) => {
         boxRef.current.rotation.x += 1*delta;
+        torusRef.current.rotation.y += 1*delta;
         sphereRef.current.position.y = Math.cos(state.clock.getElapsedTime());
         coneRef.current.position.y = Math.sin(state.clock.getElapsedTime());
     });
@@ -33,6 +36,10 @@ const Experience = () => {
         <mesh ref={coneRef} position={[-4, 0, 0]}>
             <coneGeometry args={[1, 2, 16, 8]} />
             <meshNormalMaterial color="green" />
+        </mesh>
+        <mesh ref={torusRef} position={[-8, 0, 0]}>
+            <torusGeometry/>
+            <meshPhongMaterial color="purple" />
         </mesh>
 </>
 }
