@@ -1,6 +1,7 @@
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber"
 import { useRef } from 'react';
+import Insect from "./Insect";
 
 import "./styles.css";
 
@@ -14,6 +15,10 @@ const Experience = () => {
 
     const torusRef = useRef();
 
+    const propsTexture = useTexture({
+        map: './assets/textures/pavement/pavement_02_diff_4k.jpg',
+    });
+
     useFrame((state, delta) => {
         boxRef.current.rotation.x += 1*delta;
         torusRef.current.rotation.y += 1*delta;
@@ -25,22 +30,28 @@ const Experience = () => {
         <OrbitControls makeDefault/>
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 5]} intensity={2} />
-        <mesh ref={boxRef}>
+        <mesh ref={boxRef} position={[-6,0,-6]}>
             <boxGeometry args={[2, 2, 2]} />
-            <meshStandardMaterial color="yellow" />
+            <meshStandardMaterial {...propsTexture}/>
         </mesh>
-        <mesh ref={sphereRef} position={[4, 0, 0]}>
+        <mesh ref={sphereRef} position={[6, 0, 6]}>
             <sphereGeometry args={[1, 16, 16]} />
             <meshToonMaterial color="blue" />
         </mesh>
-        <mesh ref={coneRef} position={[-4, 0, 0]}>
+        <mesh ref={coneRef} position={[-6, 0, 6]}>
             <coneGeometry args={[1, 2, 16, 8]} />
             <meshNormalMaterial color="green" />
         </mesh>
-        <mesh ref={torusRef} position={[-8, 0, 0]}>
+        <mesh ref={torusRef} position={[6, 0, -6]}>
             <torusGeometry/>
             <meshPhongMaterial color="purple" />
+
         </mesh>
+        <mesh rotation-x={-Math.PI*0.5} position-y={-2}>
+            <planeGeometry args={[20, 20]}/>
+            <meshPhongMaterial color="green" />
+        </mesh>
+        <Insect/>
 </>
 }
 
