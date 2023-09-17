@@ -56,6 +56,13 @@ const Experience = () => {
         <Pole position={[0, -2, 1 ]} />
         <Floor />
 
+        <mesh position-y={-2.50} rotation-x={Math.PI / 2}>
+            <planeGeometry
+                args={[20, 20]}
+            />
+            <meshStandardMaterial color="orange"/>
+        </mesh>
+
         
         
 </>
