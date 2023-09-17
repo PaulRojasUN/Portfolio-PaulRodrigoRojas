@@ -32,12 +32,12 @@ const Insect = (props) => {
                     <group name="Object_6">
                       <primitive object={nodes._rootJoint}/>
                       <group name="Object_34" />
-                      <skinnedMesh name="Object_35" geometry={nodes.Object_35.geometry} material={materials.Limbs} skeleton={nodes.Object_35.skeleton} />
-                      <skinnedMesh name="Object_36" geometry={nodes.Object_36.geometry} material={materials.Horns} skeleton={nodes.Object_36.skeleton} />
-                      <skinnedMesh name="Object_37" geometry={nodes.Object_37.geometry} material={materials.pupil} skeleton={nodes.Object_37.skeleton} />
-                      <skinnedMesh name="Object_38" geometry={nodes.Object_38.geometry} material={materials.MAT_Main} skeleton={nodes.Object_38.skeleton} />
-                      <skinnedMesh name="Object_39" geometry={nodes.Object_39.geometry} material={materials.Refl} skeleton={nodes.Object_39.skeleton} />
-                      <skinnedMesh name="Object_40" geometry={nodes.Object_40.geometry} material={materials.Sclera} skeleton={nodes.Object_40.skeleton} />
+                      <skinnedMesh name="Object_35" geometry={nodes.Object_35.geometry} material={materials.Limbs} skeleton={nodes.Object_35.skeleton} castShadow/>
+                      <skinnedMesh name="Object_36" geometry={nodes.Object_36.geometry} material={materials.Horns} skeleton={nodes.Object_36.skeleton} castShadow/>
+                      <skinnedMesh name="Object_37" geometry={nodes.Object_37.geometry} material={materials.pupil} skeleton={nodes.Object_37.skeleton} castShadow/>
+                      <skinnedMesh name="Object_38" geometry={nodes.Object_38.geometry} material={materials.MAT_Main} skeleton={nodes.Object_38.skeleton} castShadow/>
+                      <skinnedMesh name="Object_39" geometry={nodes.Object_39.geometry} material={materials.Refl} skeleton={nodes.Object_39.skeleton} castShadow/>
+                      <skinnedMesh name="Object_40" geometry={nodes.Object_40.geometry} material={materials.Sclera} skeleton={nodes.Object_40.skeleton} castShadow/>
                     </group>
                   </group>
                 </group>

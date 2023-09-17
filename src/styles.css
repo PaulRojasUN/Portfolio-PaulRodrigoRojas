@@ -11,12 +11,17 @@ body,
 canvas{
     touch-action: none;
 }
-.info-container{
+.info-container {
+    text-align: center;
+    top:10%;
+    left:5%;
+    padding: 10px;
     position: absolute;
     z-index: 1;
     color:aliceblue;
-    width: 50%;
+    width: 20%;
     border-width: 5px;
     border-style: solid;
     border-color: antiquewhite;
+    background-color: #14347a;
 }

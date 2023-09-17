@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 const App = () => {
     return <>
         <Canvas
-            camera={{position:[0, 0, 10]}}
+            camera={{position:[5, 5, 10]}}
             shadows
         >
             <Experience/>

@@ -3,372 +3,295 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 2546,
+      "count": 111,
       "max": [
-        48.02613067626953,
-        270.74090576171875,
-        75.45789337158203
+        52.037742614746094,
+        628.16259765625,
+        29.237930297851563
       ],
       "min": [
-        -50.87443161010742,
-        -48.41980743408203,
-        -50.87443542480469
+        -18.6562557220459,
+        601.316650390625,
+        -26.050384521484375
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 30552,
+      "byteOffset": 1332,
       "componentType": 5126,
-      "count": 2546,
+      "count": 111,
       "max": [
-        1.0,
-        1.0,
-        1.0
+        0.9049161672592163,
+        -0.13533325493335724,
+        0.990800142288208
       ],
       "min": [
+        -0.9049165844917297,
         -1.0,
-        -1.0,
-        -1.0
+        -0.9908002018928528
       ],
       "type": "VEC3"
     },
     {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 2546,
-      "max": [
-        1.0,
-        1.0,
-        1.0,
-        1.0
-      ],
-      "min": [
-        -1.0,
-        -1.0,
-        -1.0,
-        -1.0
-      ],
-      "type": "VEC4"
-    },
-    {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 2546,
+      "count": 111,
       "max": [
-        0.9912851452827454,
-        0.9959384799003601
+        0.8412141799926758,
+        0.7180396318435669
       ],
       "min": [
-        0.01413118839263916,
-        0.010581208392977715
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 20368,
-      "componentType": 5126,
-      "count": 2546,
-      "max": [
-        0.9912851452827454,
-        0.9959384799003601
-      ],
-      "min": [
-        0.01413118839263916,
-        0.010581208392977715
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 40736,
-      "componentType": 5126,
-      "count": 2546,
-      "max": [
-        0.9912851452827454,
-        0.9959384799003601
-      ],
-      "min": [
-        0.01413118839263916,
-        0.010581208392977715
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 61104,
-      "componentType": 5126,
-      "count": 2546,
-      "max": [
-        0.9912851452827454,
-        0.9959384799003601
-      ],
-      "min": [
-        0.01413118839263916,
-        0.010581208392977715
+        0.7292772531509399,
+        0.5782803297042847
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 8346,
+      "count": 510,
       "type": "SCALAR"
     },
     {
       "bufferView": 2,
-      "byteOffset": 61104,
+      "byteOffset": 2664,
       "componentType": 5126,
-      "count": 32,
+      "count": 251,
       "max": [
-        5.495586395263672,
-        230.34593200683594,
-        60.77455520629883
+        58.99843978881836,
+        660.2001953125,
+        34.68550109863281
       ],
       "min": [
-        4.192928314208984,
-        225.06178283691406,
-        59.471893310546875
+        -265.1219787597656,
+        112.17183685302734,
+        -31.49798583984375
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 61488,
+      "byteOffset": 5676,
       "componentType": 5126,
-      "count": 32,
+      "count": 251,
       "max": [
-        0.9995893836021423,
-        0.15476569533348083,
-        0.9995893836021423
+        1.0,
+        1.0,
+        0.999989926815033
       ],
       "min": [
-        -0.9995893836021423,
-        -0.4977022707462311,
-        -0.9995893836021423
+        -1.0,
+        -1.0,
+        -0.999989926815033
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
-      "byteOffset": 81472,
+      "byteOffset": 888,
       "componentType": 5126,
-      "count": 32,
+      "count": 251,
       "max": [
-        0.6216168403625488,
-        0.9071656465530396
+        0.99609375,
+        0.8126582503318787
       ],
       "min": [
-        0.4475589990615845,
-        0.030946679413318634
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 81728,
-      "componentType": 5126,
-      "count": 32,
-      "max": [
-        0.6216168403625488,
-        0.9071656465530396
-      ],
-      "min": [
-        0.4475589990615845,
-        0.030946679413318634
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 81984,
-      "componentType": 5126,
-      "count": 32,
-      "max": [
-        0.8471478223800659,
-        0.4841826260089874
-      ],
-      "min": [
-        0.7923072576522827,
-        0.3575577735900879
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 82240,
-      "componentType": 5126,
-      "count": 32,
-      "max": [
-        0.6216168403625488,
-        0.9071656465530396
-      ],
-      "min": [
-        0.4475589990615845,
-        0.030946679413318634
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 82496,
-      "componentType": 5126,
-      "count": 32,
-      "max": [
-        0.6216168403625488,
-        0.9071656465530396
-      ],
-      "min": [
-        0.4475589990615845,
-        0.030946679413318634
+        0.0,
+        0.0
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
-      "byteOffset": 33384,
+      "byteOffset": 2040,
       "componentType": 5125,
-      "count": 72,
+      "count": 1080,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 8688,
+      "componentType": 5126,
+      "count": 106,
+      "max": [
+        -213.6261749267578,
+        127.48936462402344,
+        33.45018005371094
+      ],
+      "min": [
+        -280.6178283691406,
+        -7.510632514953613,
+        -30.262672424316406
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 9960,
+      "componentType": 5126,
+      "count": 106,
+      "max": [
+        0.9988381862640381,
+        1.0,
+        0.9499515891075134
+      ],
+      "min": [
+        -0.9988381862640381,
+        -1.0,
+        -0.9499515295028687
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2896,
+      "componentType": 5126,
+      "count": 106,
+      "max": [
+        0.9958769083023071,
+        0.6959478855133057
+      ],
+      "min": [
+        0.2324478030204773,
+        0.11066904664039612
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 6360,
+      "componentType": 5125,
+      "count": 360,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Arkikon (https://sketchfab.com/ragnar)",
+      "author": "kilansky (https://sketchfab.com/kilansky)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/light-pole-4d3388e65a324342b6a13b1bff16b3ed",
-      "title": "Light Pole"
+      "source": "https://sketchfab.com/3d-models/traffic-lamp-8fc87e63dc634b20a26890f09f7b9809",
+      "title": "Traffic Lamp"
     },
-    "generator": "Sketchfab-12.68.0",
+    "generator": "Sketchfab-12.67.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 33672,
+      "byteLength": 7800,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 82752,
-      "byteOffset": 33672,
+      "byteLength": 3744,
+      "byteOffset": 7800,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 61872,
-      "byteOffset": 116424,
+      "byteLength": 11232,
+      "byteOffset": 11544,
       "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 40736,
-      "byteOffset": 178296,
-      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 219032,
+      "byteLength": 22776,
       "uri": "scene.bin"
-    }
-  ],
-  "images": [
-    {
-      "uri": "textures/LightPoleMAT_baseColor.jpeg"
-    },
-    {
-      "uri": "textures/LightPoleMAT_metallicRoughness.png"
-    },
-    {
-      "uri": "textures/LightPoleMAT_normal.png"
-    },
-    {
-      "uri": "textures/Flame_baseColor.png"
-    },
-    {
-      "uri": "textures/Flame_emissive.jpeg"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "LightPoleMAT",
-      "normalTexture": {
-        "index": 2
-      },
+      "name": "blinn91",
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicRoughnessTexture": {
-          "index": 1
-        }
+        "baseColorFactor": [
+          0.629,
+          0.629,
+          0.080512,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9207483816249483
       }
     },
     {
-      "alphaMode": "BLEND",
       "doubleSided": true,
-      "emissiveFactor": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "emissiveTexture": {
-        "index": 4
-      },
-      "name": "Flame",
+      "name": "blinn90",
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 3
-        },
-        "metallicFactor": 0.0
+        "baseColorFactor": [
+          0.174,
+          0.174,
+          0.174,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9207483816249483
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "lambert72",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.122,
+          0.122,
+          0.122,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
       }
     }
   ],
   "meshes": [
     {
-      "name": "LightPole_LightPoleMAT_0",
+      "name": "TrafficLamp_blinn91_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3,
-            "TEXCOORD_1": 4,
-            "TEXCOORD_2": 5,
-            "TEXCOORD_3": 6
+            "TEXCOORD_0": 2
           },
-          "indices": 7,
+          "indices": 3,
           "material": 0,
           "mode": 4
         }
       ]
     },
     {
-      "name": "LightPole_Flame_0",
+      "name": "TrafficLamp_blinn90_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "TrafficLamp_lambert72_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 9,
             "POSITION": 8,
-            "TEXCOORD_0": 10,
-            "TEXCOORD_1": 11,
-            "TEXCOORD_2": 12,
-            "TEXCOORD_3": 13,
-            "TEXCOORD_4": 14
+            "TEXCOORD_0": 10
           },
-          "indices": 15,
-          "material": 1,
+          "indices": 11,
+          "material": 2,
           "mode": 4
         }
       ]
@@ -421,7 +344,7 @@
         0.0,
         1.0
       ],
-      "name": "LightPole_fbx.fbx"
+      "name": "6719a61fd62d4390b54e8d079143e91b.fbx"
     },
     {
       "children": [
@@ -432,25 +355,40 @@
     {
       "children": [
         4,
-        5
+        5,
+        6
       ],
-      "name": "LightPole"
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "TrafficLamp"
     },
     {
       "mesh": 0,
-      "name": "LightPole_LightPoleMAT_0"
+      "name": "TrafficLamp_blinn91_0"
     },
     {
       "mesh": 1,
-      "name": "LightPole_Flame_0"
-    }
-  ],
-  "samplers": [
+      "name": "TrafficLamp_blinn90_0"
+    },
     {
-      "magFilter": 9729,
-      "minFilter": 9987,
-      "wrapS": 10497,
-      "wrapT": 10497
+      "mesh": 2,
+      "name": "TrafficLamp_lambert72_0"
     }
   ],
   "scene": 0,
@@ -460,28 +398,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 3
-    },
-    {
-      "sampler": 0,
-      "source": 4
     }
   ]
 }
