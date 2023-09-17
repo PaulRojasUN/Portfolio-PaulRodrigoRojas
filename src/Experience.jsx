@@ -1,7 +1,10 @@
-import { OrbitControls, useTexture } from "@react-three/drei";
+import { OrbitControls, useTexture, Environment } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber"
 import { useRef } from 'react';
 import Insect from "./Insect";
+import Lights from "./Lights";
+import Pole from "./Pole";
+import { PointLightHelper } from "three";
 
 import "./styles.css";
 
@@ -14,6 +17,8 @@ const Experience = () => {
     const coneRef = useRef();
 
     const torusRef = useRef();
+
+
 
     const propsTexture = useTexture({
         map: './assets/textures/pavement/pavement_02_diff_4k.jpg',
@@ -28,30 +33,100 @@ const Experience = () => {
 
     return <>
         <OrbitControls makeDefault/>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[10, 10, 5]} intensity={2} />
-        <mesh ref={boxRef} position={[-6,0,-6]}>
+        <Lights/>
+
+        
+            <spotLight 
+                castShadow
+                position={[0, 4, -2]}
+                angle={Math.PI / 12}
+                intensity={1000}
+                penumbra={1}
+                distance={8}
+            />  
+        <pointLight position={[-4,1,-4]} intensity={50} color={"blue"} />
+            <pointLight position={[4,1,-4]} intensity={50} color={"red"} />
+
+            <Environment preset="sunset" background={true}/>
+
+        <mesh castShadow ref={boxRef} position={[-6,0,-6]}>
             <boxGeometry args={[2, 2, 2]} />
             <meshStandardMaterial {...propsTexture}/>
         </mesh>
-        <mesh ref={sphereRef} position={[6, 0, 6]}>
+        <mesh castShadow ref={sphereRef} position={[6, 0, 6]}>
             <sphereGeometry args={[1, 16, 16]} />
             <meshToonMaterial color="blue" />
         </mesh>
-        <mesh ref={coneRef} position={[-6, 0, 6]}>
+        <mesh castShadow ref={coneRef} position={[-6, 0, 6]}>
             <coneGeometry args={[1, 2, 16, 8]} />
             <meshNormalMaterial color="green" />
         </mesh>
-        <mesh ref={torusRef} position={[6, 0, -6]}>
+        <mesh castShadow ref={torusRef} position={[6, 0, -6]}>
             <torusGeometry/>
             <meshPhongMaterial color="purple" />
 
         </mesh>
-        <mesh rotation-x={-Math.PI*0.5} position-y={-2}>
-            <planeGeometry args={[20, 20]}/>
-            <meshPhongMaterial color="green" />
-        </mesh>
         <Insect/>
+        <Pole/>
+        <mesh rotation-x={-Math.PI*0.5} position-y={-2} receiveShadow>
+            <planeGeometry args={[20, 20]}/>
+            <meshStandardMaterial color="green" />
+        </mesh>
+
+        <ambientLight intensity={0.5} />
+        <directionalLight 
+            castShadow
+            position={[7, 7, -7]} 
+            intensity={1} 
+            shadow-mapSize={[128, 128]}
+            shadow-camera-far={12}
+            shadow-camera-left={-15}
+            shadow-camera-right={15}
+            shadow-camera-top={15}
+            shadow-camera-bottom={-15}
+            target-position={torusRef.position}
+                
+        />
+        <directionalLight     
+            castShadow
+            position={[-7, 7, -7]} 
+            intensity={1} 
+            shadow-mapSize={[128, 128]}
+            shadow-camera-far={12}
+            shadow-camera-left={-15}
+            shadow-camera-right={15}
+            shadow-camera-top={15}
+            shadow-camera-bottom={-15}
+            target-position={boxRef.position}
+                
+        />
+        <directionalLight     
+            castShadow
+            position={[7, 7, 7]} 
+            intensity={1} 
+            shadow-mapSize={[128, 128]}
+            shadow-camera-far={12}
+            shadow-camera-left={-15}
+            shadow-camera-right={15}
+            shadow-camera-top={15}
+            shadow-camera-bottom={-15}
+            target-position={boxRef.position}
+                
+        />
+        <directionalLight     
+            castShadow
+            position={[-7, 7, 7]} 
+            intensity={1} 
+            shadow-mapSize={[128, 128]}
+            shadow-camera-far={12}
+            shadow-camera-left={-15}
+            shadow-camera-right={15}
+            shadow-camera-top={15}
+            shadow-camera-bottom={-15}
+            target-position={boxRef.position}
+                
+        />
+        
 </>
 }
 

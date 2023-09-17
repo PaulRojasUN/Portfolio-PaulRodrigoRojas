@@ -6,6 +6,7 @@ const App = () => {
     return <>
         <Canvas
             camera={{position:[0, 0, 10]}}
+            shadows
         >
             <Experience/>
         </Canvas>

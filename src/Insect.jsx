@@ -23,14 +23,14 @@ const Insect = (props) => {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} position={[0,-2, 2]} scale={8.975}>
+        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} position={[0,-2, 1]} scale={8.975}>
           <group name="dbdca8658ad34f5f91de7f46d3590cd1fbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
             <group name="Object_2">
               <group name="RootNode">
                 <group name="Ariados">
                   <group name="Rig" scale={[1.011, 1.027, 1.011]}>
                     <group name="Object_6">
-                      <primitive object={nodes._rootJoint} />
+                      <primitive object={nodes._rootJoint}/>
                       <group name="Object_34" />
                       <skinnedMesh name="Object_35" geometry={nodes.Object_35.geometry} material={materials.Limbs} skeleton={nodes.Object_35.skeleton} />
                       <skinnedMesh name="Object_36" geometry={nodes.Object_36.geometry} material={materials.Horns} skeleton={nodes.Object_36.skeleton} />

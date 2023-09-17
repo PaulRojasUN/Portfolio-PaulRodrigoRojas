@@ -1,0 +1,487 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        48.02613067626953,
+        270.74090576171875,
+        75.45789337158203
+      ],
+      "min": [
+        -50.87443161010742,
+        -48.41980743408203,
+        -50.87443542480469
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 30552,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        0.9912851452827454,
+        0.9959384799003601
+      ],
+      "min": [
+        0.01413118839263916,
+        0.010581208392977715
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 20368,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        0.9912851452827454,
+        0.9959384799003601
+      ],
+      "min": [
+        0.01413118839263916,
+        0.010581208392977715
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40736,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        0.9912851452827454,
+        0.9959384799003601
+      ],
+      "min": [
+        0.01413118839263916,
+        0.010581208392977715
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 61104,
+      "componentType": 5126,
+      "count": 2546,
+      "max": [
+        0.9912851452827454,
+        0.9959384799003601
+      ],
+      "min": [
+        0.01413118839263916,
+        0.010581208392977715
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 8346,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 61104,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        5.495586395263672,
+        230.34593200683594,
+        60.77455520629883
+      ],
+      "min": [
+        4.192928314208984,
+        225.06178283691406,
+        59.471893310546875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 61488,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.9995893836021423,
+        0.15476569533348083,
+        0.9995893836021423
+      ],
+      "min": [
+        -0.9995893836021423,
+        -0.4977022707462311,
+        -0.9995893836021423
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 81472,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.6216168403625488,
+        0.9071656465530396
+      ],
+      "min": [
+        0.4475589990615845,
+        0.030946679413318634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 81728,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.6216168403625488,
+        0.9071656465530396
+      ],
+      "min": [
+        0.4475589990615845,
+        0.030946679413318634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 81984,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.8471478223800659,
+        0.4841826260089874
+      ],
+      "min": [
+        0.7923072576522827,
+        0.3575577735900879
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 82240,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.6216168403625488,
+        0.9071656465530396
+      ],
+      "min": [
+        0.4475589990615845,
+        0.030946679413318634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 82496,
+      "componentType": 5126,
+      "count": 32,
+      "max": [
+        0.6216168403625488,
+        0.9071656465530396
+      ],
+      "min": [
+        0.4475589990615845,
+        0.030946679413318634
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 33384,
+      "componentType": 5125,
+      "count": 72,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Arkikon (https://sketchfab.com/ragnar)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/light-pole-4d3388e65a324342b6a13b1bff16b3ed",
+      "title": "Light Pole"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 33672,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 82752,
+      "byteOffset": 33672,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61872,
+      "byteOffset": 116424,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 40736,
+      "byteOffset": 178296,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 219032,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/LightPoleMAT_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/LightPoleMAT_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/LightPoleMAT_normal.png"
+    },
+    {
+      "uri": "textures/Flame_baseColor.png"
+    },
+    {
+      "uri": "textures/Flame_emissive.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "LightPoleMAT",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 4
+      },
+      "name": "Flame",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "LightPole_LightPoleMAT_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5,
+            "TEXCOORD_3": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "LightPole_Flame_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10,
+            "TEXCOORD_1": 11,
+            "TEXCOORD_2": 12,
+            "TEXCOORD_3": 13,
+            "TEXCOORD_4": 14
+          },
+          "indices": 15,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "LightPole_fbx.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "name": "LightPole"
+    },
+    {
+      "mesh": 0,
+      "name": "LightPole_LightPoleMAT_0"
+    },
+    {
+      "mesh": 1,
+      "name": "LightPole_Flame_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}
