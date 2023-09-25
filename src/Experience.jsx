@@ -1,4 +1,4 @@
-import { OrbitControls, useTexture, Sky, Stars } from "@react-three/drei";
+import { OrbitControls, useTexture, Float} from "@react-three/drei";
 import Environments from "./Environments";
 import { useFrame } from "@react-three/fiber"
 import { useRef } from 'react';
@@ -6,8 +6,10 @@ import Insect from "./Insect";
 import Lights from "./Lights";
 import Pole from "./Pole";
 import Floor from "./Floor";
+import WelcomeText from "./CustomText2D";
 
 import "./styles.css";
+import CustomText2D from "./CustomText2D";
 
 const Experience = () => {
 
@@ -52,7 +54,7 @@ const Experience = () => {
             <meshPhongMaterial color="purple" />
         </mesh>
 
-        <Insect/>
+        <Insect onClick={()=>alert("HOLA")}/>
         <Pole position={[0, -2, 1 ]} />
         <Floor />
 
@@ -62,7 +64,14 @@ const Experience = () => {
             />
             <meshStandardMaterial color="orange"/>
         </mesh>
-
+        <Float
+            speed={2}
+            rotationIntensity={1.5}
+            floatIntensity={1.5}
+        >
+            <CustomText2D color={"blue"} text={"Welcome"} />   
+            <CustomText2D color={"cyan"} text={"Click the bug!"} position={[0, -1, 0]} size={0.5}/>    
+        </Float>
         
         
 </>
