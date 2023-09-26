@@ -1,4 +1,4 @@
-import { OrbitControls, useTexture, Float} from "@react-three/drei";
+import { OrbitControls, useTexture, Float, Text3D, Html} from "@react-three/drei";
 import Environments from "./Environments";
 import { useFrame } from "@react-three/fiber"
 import { useRef } from 'react';
@@ -6,12 +6,17 @@ import Insect from "./Insect";
 import Lights from "./Lights";
 import Pole from "./Pole";
 import Floor from "./Floor";
-import WelcomeText from "./CustomText2D";
+import Bio from "./Bio";
+import { useState } from "react";
 
 import "./styles.css";
 import CustomText2D from "./CustomText2D";
 
+
+
 const Experience = () => {
+
+    const [bioOn, setBioOn] = useState(false);
 
     const boxRef = useRef();
 
@@ -54,7 +59,7 @@ const Experience = () => {
             <meshPhongMaterial color="purple" />
         </mesh>
 
-        <Insect onClick={()=>alert("HOLA")}/>
+        <Insect onClick={()=>setBioOn(!bioOn)}/>
         <Pole position={[0, -2, 1 ]} />
         <Floor />
 
@@ -72,8 +77,7 @@ const Experience = () => {
             <CustomText2D color={"blue"} text={"Welcome"} />   
             <CustomText2D color={"cyan"} text={"Click the bug!"} position={[0, -1, 0]} size={0.5}/>    
         </Float>
-        
-        
+        {bioOn ? <Bio position={[4, 0, 1]}/> : <></>}
 </>
 }
 
