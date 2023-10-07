@@ -1,4 +1,4 @@
-import { OrbitControls, useTexture, Float, Text3D, Html} from "@react-three/drei";
+import { OrbitControls, useTexture, Float} from "@react-three/drei";
 import Environments from "./Environments";
 import { useFrame } from "@react-three/fiber"
 import { useRef } from 'react';
@@ -11,6 +11,7 @@ import { useState } from "react";
 
 import "./styles.css";
 import CustomText2D from "./CustomText2D";
+import CustomText3D from "./CustomText3D";
 
 
 
@@ -38,7 +39,7 @@ const Experience = () => {
     });
 
     return <>
-        <OrbitControls makeDefault/>
+        {/* <OrbitControls makeDefault/> */}
         <Lights/>
         <Environments/>
 
@@ -74,10 +75,14 @@ const Experience = () => {
             rotationIntensity={1.5}
             floatIntensity={1.5}
         >
-            <CustomText2D color={"blue"} text={"Welcome"} />   
-            <CustomText2D color={"cyan"} text={"Click the bug!"} position={[0, -1, 0]} size={0.5}/>    
+
+            <CustomText3D text={"Welcome"} position={[2, 2, 0]} rotation={[0, 0, 0]} size={0.8}/>    
+            {/* <CustomText2D color={"blue"} text={"Welcome"} />    */}
+            <CustomText2D color={"cyan"} text={"Click the bug!"} position={[5, 1, 0]} size={0.5}/> 
+
+           
         </Float>
-        {bioOn ? <Bio position={[4, 0, 1]}/> : <></>}
+        {bioOn ? <Bio position={[-4, 2.5, 4]} rotation={[0, Math.PI/4, 0]}/> : <></>}
 </>
 }
 
