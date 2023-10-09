@@ -7,15 +7,18 @@ import Insect from "./items/Insect";
 import Lights from "./items/Lights";
 import Pole from "./items/Pole";
 import Floor from "./items/Floor";
-import Bio from "./items/Bio";
 
 import "./styles.css";
 import CustomText2D from "./items/CustomText2D";
 import CustomText3D from "./items/CustomText3D";
 
+import { MathUtils } from "three";
+
 
 const Island1 = () => {
     const [bioOn, setBioOn] = useState(false);
+    
+    const [island2Focus, setIsland2Focus] = useState(false);
 
     const boxRef = useRef();
 
@@ -36,10 +39,30 @@ const Island1 = () => {
         coneRef.current.position.y = Math.sin(state.clock.getElapsedTime());
     });
 
+        useFrame((state) => {
+            state.camera.position.x = MathUtils.lerp(state.camera.position.x, island2Focus ? 40: 5, 0.1)
+            state.camera.position.y = MathUtils.lerp(state.camera.position.y, island2Focus ? 8 : 5, 0.1)
+            state.camera.position.z = MathUtils.lerp(state.camera.position.z, island2Focus ? 44 : 10, 0.1)  
+
+        });
+
     return <>
         {/* <OrbitControls makeDefault/> */}
         <Lights/>
         <Environments/>
+
+        <mesh position={[0,-11.5,10]}>
+            <planeGeometry
+                args={[20, 20]}
+            />
+            <meshStandardMaterial color="orange"/>
+        </mesh>
+        <mesh position={[10,-11.5,1]} rotation-y={Math.PI/2}>
+            <planeGeometry
+                args={[20, 20]}
+            />
+            <meshStandardMaterial color="orange"/>
+        </mesh>
 
         <mesh castShadow ref={boxRef} position={[-6,0,-6]}>
             <boxGeometry args={[2, 2, 2]} />
@@ -58,9 +81,9 @@ const Island1 = () => {
             <meshPhongMaterial color="purple" />
         </mesh>
 
-        <Insect onClick={()=>setBioOn(!bioOn)}/>
+        <Insect onClick={()=>{setBioOn(!bioOn);setIsland2Focus(!island2Focus)}}/>
         <Pole position={[0, -2, 1 ]} />
-        <Floor />
+        <Floor position={[0, -2.40,0]}/>
 
         <mesh position-y={-2.50} rotation-x={Math.PI / 2}>
             <planeGeometry
@@ -75,12 +98,11 @@ const Island1 = () => {
         >
 
             <CustomText3D text={"Welcome"} position={[2, 2, 0]} rotation={[0, 0, 0]} size={0.8}/>    
-            {/* <CustomText2D color={"blue"} text={"Welcome"} />    */}
             <CustomText2D color={"cyan"} text={"Click the bug!"} position={[5, 1, 0]} size={0.5}/> 
 
            
         </Float>
-        {bioOn ? <Bio position={[-4, 2.5, 4]} rotation={[0, Math.PI/4, 0]}/> : <></>}
+        {/* {bioOn ? <Bio position={[-4, 2.5, 4]} rotation={[0, Math.PI/4, 0]}/> : <></>} */}
 </>
 }
 

@@ -1,7 +1,6 @@
 import { useTexture } from "@react-three/drei";
-import { RepeatWrapping, Vector2 } from "three";
 
-const Floor = () => {
+const Floor = ({position}) => {
     const PATH = "/assets/textures/sand/";
 
     const propsTexture = useTexture({
@@ -10,7 +9,7 @@ const Floor = () => {
     })
 
     return (
-        <mesh position-y={-2.40} rotation-x={-Math.PI / 2} receiveShadow >
+        <mesh position={position} rotation-x={-Math.PI / 2} receiveShadow >
             <planeGeometry
                 args={[20, 20, 10,10]}
             />
