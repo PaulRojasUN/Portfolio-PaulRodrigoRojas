@@ -7,7 +7,6 @@ import CustomText2D from "./items/CustomText2D";
 const Island2 = () => {
     const ballBodyRef = useRef();
 
-
     const [play, setPlay] = useState(false)
     const [hitSound] = useState(()=>new Audio("assets/sounds/hit.wav"))
     
@@ -53,9 +52,10 @@ const Island2 = () => {
             />
             <meshStandardMaterial color="orange"/>
         </mesh>
-
         <CustomText2D color={"black"} text={"About Me"} position={[35, 9.5 , 32]} size={0.8} rotation={[0, Math.PI/4, 0]}/> 
         <CustomText2D color={"black"} text={"I am Paul Rojas, I'm 20 years old and I love computation."} position={[35, 8.5, 32]} size={0.4} rotation={[0, Math.PI/4, 0]} /> 
+        <CustomText2D color={"white"} text={" <-- Click the ball!"} position={[35, 7, 32]} size={0.4} rotation={[0, Math.PI/4, 0]} /> 
+        <CustomText2D color={"white"} text={"Click the UV logo! --> "} position={[27, 5, 40]} size={0.4} rotation={[0, Math.PI/4, 0]} /> 
         <Physics>
             <RigidBody
                 type={"fixed"}

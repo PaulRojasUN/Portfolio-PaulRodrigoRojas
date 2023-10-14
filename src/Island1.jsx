@@ -11,6 +11,7 @@ import Floor from "./items/Floor";
 import "./styles.css";
 import CustomText2D from "./items/CustomText2D";
 import CustomText3D from "./items/CustomText3D";
+import UVLogo from "./items/UVLogo";
 
 import { MathUtils } from "three";
 
@@ -81,6 +82,7 @@ const Island1 = () => {
             <meshPhongMaterial color="purple" />
         </mesh>
 
+        <UVLogo position={[26, 3, 34]} rotation={[0,3*Math.PI/4, 0]} onClick={()=>{setBioOn(!bioOn);setIsland2Focus(!island2Focus)}}/>
         <Insect onClick={()=>{setBioOn(!bioOn);setIsland2Focus(!island2Focus)}}/>
         <Pole position={[0, -2, 1 ]} />
         <Floor position={[0, -2.40,0]}/>
